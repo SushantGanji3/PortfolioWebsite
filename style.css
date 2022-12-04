@@ -11,7 +11,7 @@
 :root{
 	--bg-color: #020312;
 	--text-color: #fff;
-	--main-color: #eb4a4a;
+	--main-color: #990000;
 	--second-color: gray;
 	--other-color: #12141c;
 	--h1-font: 5.2rem;
@@ -67,11 +67,12 @@ header{
 section{
 	padding: 160px 16% 90px;
 }
+
 .home{
 	height: 100vh;
 	width: 100%;
 	position: relative;
-	background: url(../img/background.jpg);
+	background: url(../PortfolioWebsite/black.jpeg);
 	background-size: cover;
 	background-position: center;
 	display: flex;
@@ -170,7 +171,7 @@ header.sticky{
 	font-size: 24px;
 	font-weight: 600;
 }
-.services-content{
+.skills-content{
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, auto));
 	align-items: center;
@@ -203,6 +204,13 @@ header.sticky{
 }
 .box:hover h3{
 	color: var(--main-color);
+}
+
+#icon {
+	font-size: 36px;
+	color: var(--main-color);
+	z-index: 10001;
+	cursor: pointer;
 }
 
 .portfolio-content{
@@ -405,7 +413,7 @@ form textarea{
 		display: flex;
 		flex-direction: column;
 		background: #12141c;
-		text-align: left;
+		text-align: center;
 		transition: all .40s ease;
 	}
 	.navbar a{
